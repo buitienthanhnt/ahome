@@ -1,0 +1,13 @@
+<div class="form-group">
+	<select class="form-control" data-bind="
+				options: timelines,
+				optionsText: 'label',
+				optionsValue: 'value',
+				value: selected,
+				selectedOptions: [selected()],
+				optionsCaption: 'Choose...',
+			">
+	</select>
+	<input class="form-control mt-4" width="276" data-bind="textInput: time, attr:{id: id,}" />
+	<input type="text" data-bind="attr: {value: dataText, name: name}" class="form-control mt-2">
+</div>

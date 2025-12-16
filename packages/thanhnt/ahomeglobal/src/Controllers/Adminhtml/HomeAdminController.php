@@ -47,7 +47,7 @@ final class HomeAdminController extends Controller
 			],
 		];
 
-		return view('adminhtml.pages.ahomeglobal.homes.list', [
+		return view('adminhtml.ahome.pages.ahomeglobal.homes.list', [
 			'attributes' => [
 				HomeInterface::ID,
 				HomeInterface::NAME,
@@ -64,7 +64,7 @@ final class HomeAdminController extends Controller
 	public function create()
 	{
 		$listAttributes = HomeInterface::FORM_FIELDS;
-		return view('adminhtml.pages.ahomeglobal.homes.create', [
+		return view('adminhtml.ahome.pages.ahomeglobal.homes.create', [
 			'listAttributes' => $listAttributes,
 			'optionAttribute' => array_map(function ($field) {
 				return [
@@ -93,7 +93,7 @@ final class HomeAdminController extends Controller
 			];
 		}, $home->attr->toArray());
 
-		return view('adminhtml.pages.ahomeglobal.homes.edit', [
+		return view('adminhtml.ahome.pages.ahomeglobal.homes.edit', [
 			'listAttributes' => $listAttributes,
 			'optionAttribute' => $optionAttribute,
 			'action' => '/' . HomeInterface::ROUTE_PREFIX . '/home-update/' . $home->id,

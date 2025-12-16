@@ -1,0 +1,8 @@
+<p>title of form content!</p>
+<ul data-bind="foreach: products">
+    <li class="product">
+        <strong data-bind="text: name"></strong>
+        <like-or-dislike params="value: userRating"></like-or-dislike>
+    </li>
+</ul>
+<button data-bind="click: addProduct">Add a product</button>

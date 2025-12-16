@@ -1,6 +1,8 @@
 <?php
 use Illuminate\Support\Facades\Storage;
 
+const ADMIN_PREFIX = 'adminhtml';
+
 if (! function_exists('getStoragePath')) {
     /**
      * @return string

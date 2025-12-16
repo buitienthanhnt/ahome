@@ -13,10 +13,11 @@
         <!-- Scripts -->
         @routes
         @viteReactRefresh
-        @vite(['resources/js/app.jsx', "resources/js/Pages/{$page['component']}.jsx"])
+        @vite(['resources/js/app.jsx', "resources/js/Pages/{$page['component']}.tsx"])
         @inertiaHead
     </head>
     <body class="font-sans antialiased">
-        @inertia
+        {{-- default app id is 'app' (<div id='app'></div>) --}}
+        @inertia('acar-global')
     </body>
 </html>

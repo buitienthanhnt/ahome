@@ -2,7 +2,7 @@
 
 namespace Thanhnt\Ahomeglobal\Models;
 
-use App\Models\ShareAction\ImagePathAttrModel;
+use Thanhnt\Ahomeglobal\Models\ShareAction\ImagePathAttrModel;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Attributes\UseFactory;

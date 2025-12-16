@@ -1,0 +1,17 @@
+<div class="form-group">
+	<select class="custom-select" 
+		data-bind="options: options,
+                optionsText: 'label',
+				optionsValue: 'value',
+                value: selectedOption,
+				selectedOptions: [selectedOption()],
+                optionsCaption: 'Choose...',
+	">
+	</select>
+	<input type="text" class="form-control mt-1" data-bind="textInput:textData, attr: {name: attr.name}">
+</div>
+
+<div data-bind="visible: selectedOption"> <!-- Appears when you select something -->
+	You have chosen a option with value:
+	<span data-bind="text: selectedOption() ? selectedOption() : 'unknown'"></span>.
+</div>

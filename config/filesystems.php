@@ -71,6 +71,7 @@ return [
 
     'links' => [
         public_path('storage') => storage_path('app/public'),
+        public_path('source') => resource_path('public'),  // add by tha: mapping source folder in public to-> assets folder in resource
     ],
 
 ];

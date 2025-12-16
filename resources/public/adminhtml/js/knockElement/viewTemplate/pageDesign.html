@@ -1,0 +1,126 @@
+<div class="flex row">
+	<div class="col">
+		<div class="d-grid gap-3" style="row-gap: 10px;" data-bind="foreach: elements">
+			<div class="border border-red-200 p-2 rounded">
+				<div class="d-flex justify-content-between">
+					<p class="d-flex" data-bind="text: $data.label"></p>
+					<span class="right-1 btn btn-success text-warning z" data-bind="click: $parent.addItem"
+						style="z-index: 10;">add</span>
+				</div>
+				<div class="position-relative min" style="min-height: 80px;">
+					<div class="d-flex h-100 w-100 position-absolute">
+						<p>content of the element</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col">
+		<form action="/adminhtml/design/home-setup?type=home-page" method="post">
+			<div class="d-grid gap-3" style="row-gap: 10px;" data-bind="foreach: chooseItems">
+				<div class="border border-red-200 p-2 rounded">
+					<div class="d-flex justify-content-between">
+						<p data-bind="text: $data.label"></p>
+						<span class="btn btn-danger text-info" data-bind="click: $parent.removeItem"
+							style="z-index: 10;">remove</span>
+					</div>
+					<div class="position-relative min" style="min-height: 80px;">
+						<div data-bind="if: $data.type === 'banner'">
+							<div data-bind='component: {
+								name: "banner-design-com",
+								params: { attr: $data }
+							}'></div>
+						</div>
+
+						<div data-bind="if: $data.type === 'topPage'">
+							<div data-bind='component: {
+								name: "toppage-design-com",
+								params: { attr: $data }
+							}'></div>
+						</div>
+
+						<div data-bind="if: $data.type === 'topComment'">
+							<div data-bind='component: {
+								name: "topcomment-design-com",
+								params: { attr: $data }
+							}'></div>
+						</div>
+
+						<div data-bind="if: $data.type === 'centerCategory'">
+							<div data-bind='component: {
+								name: "centercategory-design-com",
+								params: { attr: $data }
+							}'></div>
+						</div>
+
+						<div data-bind="if: $data.type === 'timeLine'">
+							<div data-bind='component: {
+								name: "timeline-design-com",
+								params: { attr: $data }
+							}'></div>
+						</div>
+
+						<div data-bind="if: $data.type === 'pageRandom'">
+							<div data-bind='component: {
+								name: "pagerandom-design-com",
+								params: { attr: $data }
+							}'></div>
+						</div>
+
+						<div data-bind="if: $data.type === 'latestPage'">
+							<div data-bind='component: {
+								name: "latespage-design-com",
+								params: { attr: $data }
+							}'></div>
+						</div>
+
+						<div data-bind="if: $data.type === 'videos'">
+							<div data-bind='component: {
+								name: "videos-design-com",
+								params: { attr: $data }
+							}'></div>
+						</div>
+
+						<div data-bind="if: $data.type === 'gridPage'">
+							<div data-bind='component: {
+								name: "gridpage-design-com",
+								params: { attr: $data }
+							}'></div>
+						</div>
+
+						<div data-bind="if: $data.type === 'listVertical'">
+							<div data-bind='component: {
+								name: "listvertical-design-com",
+								params: { attr: $data }
+							}'></div>
+						</div>
+
+						<div data-bind="if: $data.type === 'listHorizon'">
+							<div data-bind='component: {
+								name: "listhorizon-design-com",
+								params: { attr: $data }
+							}'></div>
+						</div>
+
+						<div data-bind="if: $data.type === 'chart'">
+							<div data-bind='component: {
+								name: "chart-design-com",
+								params: { attr: $data }
+							}'></div>
+						</div>
+
+						<div data-bind="if: $data.type === 'suggest'">
+							<div data-bind='component: {
+								name: "suggest-design-com",
+								params: { attr: $data }
+							}'></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="justify-content-center d-flex mt-3">
+				<button type="submit" class="btn btn-primary col-md-4">Submit</button>
+			</div>
+		</form>
+	</div>
+</div>

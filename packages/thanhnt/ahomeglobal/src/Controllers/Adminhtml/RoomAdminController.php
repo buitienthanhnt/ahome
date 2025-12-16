@@ -34,7 +34,7 @@ final class RoomAdminController extends Controller
 			],
 		];
 
-		return view('adminhtml.pages.ahomeglobal.rooms.index', [
+		return view('adminhtml.ahome.pages.ahomeglobal.rooms.index', [
 			'attributes' => [
 				RoomInterface::ID,
 				RoomInterface::TITLE,
@@ -49,7 +49,7 @@ final class RoomAdminController extends Controller
 	public function create($home_id)
 	{
 		$listAttributes = RoomInterface::FORM_FIELDS;
-		return view('adminhtml.pages.ahomeglobal.rooms.create', [
+		return view('adminhtml.ahome.pages.ahomeglobal.rooms.create', [
 			'listAttributes' => $listAttributes,
 			'action' => '/adminhtml/ahome/room-register/' . $home_id,
 			'optionAttribute' => array_map(function ($field) {

@@ -2,7 +2,7 @@
 namespace Thanhnt\Ahomeglobal\Models\Types;
 
 interface OrderInterface{
-	const TABLE_NAME = 'orders';
+	const TABLE_NAME = 'a_orders';
 
 	const ID = 'id';
 	const ROOM_ID = 'room_id';

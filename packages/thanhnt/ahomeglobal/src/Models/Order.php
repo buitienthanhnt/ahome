@@ -19,6 +19,8 @@ class Order extends Model implements OrderInterface
     use HasFactory;
     use SoftDeletes;
 
+    protected $table = self::TABLE_NAME;
+
     /**
      * khai báo chuyển đổi kiểu dữ liệu
      */

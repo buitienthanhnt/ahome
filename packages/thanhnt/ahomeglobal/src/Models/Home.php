@@ -2,7 +2,7 @@
 
 namespace Thanhnt\Ahomeglobal\Models;
 
-use App\Models\ShareAction\ImagePathAttrModel;
+use Thanhnt\Ahomeglobal\Models\ShareAction\ImagePathAttrModel;
 use Illuminate\Database\Eloquent\Attributes\UseFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 // use Illuminate\Database\Eloquent\Concerns\HasTimestamps;
