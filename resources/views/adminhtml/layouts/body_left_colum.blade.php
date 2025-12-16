@@ -1,0 +1,1 @@
+@render(App\ViewBlock\AdminLeftTab::class)
