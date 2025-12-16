@@ -42,9 +42,9 @@ $categoryApiController = CategoryApiControllerInterface::CONTROLLER_NAME . '@';
 $writerApiController = WriterApiControllerInterface::CONTROLLER_NAME . '@';
 $managerApiController = ManagerApiInterface::CONTROLLER_NAME . '@';
 
-Route::get('getToken', "Frontend\ManagerController@getToken")->name('getToken');
+Route::get('getToken', "\App\Http\Controllers\Frontend\ManagerController@getToken")->name('getToken');
 
-Route::post('refreshToken', "Frontend\ManagerController@refreshUserToken")->name('refreshUserToken');
+Route::post('refreshToken', "\App\Http\Controllers\Frontend\ManagerController@refreshUserToken")->name('refreshUserToken');
 
 // https://localhost/laravel1/public/api/homeInfo
 Route::get('homeInfo', $managerApiController . ManagerApiInterface::HOME_INFO);

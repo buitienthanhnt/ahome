@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 interface ExtensionControllerInterface{
-    const CONTROLLER_NAME = 'Frontend\ExtensionController';
+    const CONTROLLER_NAME = '\App\Http\Controllers\Frontend\ExtensionController';
 
     const HOME_INFO = 'homeInfo';
 

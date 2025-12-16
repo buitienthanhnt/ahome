@@ -346,6 +346,7 @@ class Paper extends Model implements PaperInterface
      */
     function getUrl(): string
     {
+        return '';
         return route(
             'front_paper_detail',
             [

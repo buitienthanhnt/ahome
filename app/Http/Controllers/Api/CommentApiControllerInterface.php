@@ -2,7 +2,7 @@
 namespace App\Http\Controllers\Api;
 
 interface CommentApiControllerInterface{
-    const CONTROLLER_NAME = 'Api\CommentApiController';
+    const CONTROLLER_NAME = '\App\Http\Controllers\Api\CommentApiController';
 
     const PAPER_COMMENTS = 'getCommentsOfPaper';
     const PAPER_COMMENT_CHILDRENT = 'getCommentChildrent';

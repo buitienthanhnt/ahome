@@ -82,7 +82,7 @@ class AdminLeftTab implements Htmlable
 					"Name"     => explode("@", $action["controller"], 2)[1],
 					"Number"   => str_replace(["\\", "/", "@"], ["-", "__", "_"], $action["controller"]),
 					"Children" => [],
-					"as" => $action["as"],
+					"as" => $action["as"] ?? "",
 				];
 			}
 

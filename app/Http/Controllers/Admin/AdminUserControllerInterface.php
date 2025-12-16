@@ -2,7 +2,7 @@
 namespace App\Http\Controllers\Admin;
 
 interface AdminUserControllerInterface{
-    const CONTROLLER_NAME = 'Admin\AdminUserController';
+    const CONTROLLER_NAME = '\App\Http\Controllers\Admin\AdminUserController';
     const PREFIX = 'adminUser';
 
     const LIST_ADMIN_USER = 'listAdminUser';

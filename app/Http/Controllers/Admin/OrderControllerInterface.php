@@ -2,7 +2,7 @@
 namespace App\Http\Controllers\Admin;
 
 interface OrderControllerInterface{
-    const CONTROLLER_NAME = 'Admin\OrderController';
+    const CONTROLLER_NAME = '\App\Http\Controllers\Admin\OrderController';
     const PREFIX = 'orders';
 
     const LIST_ORDER = 'listOrder';

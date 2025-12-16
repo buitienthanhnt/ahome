@@ -2,7 +2,7 @@
 namespace App\Http\Controllers\Admin;
 
 interface FirebaseControllerInterface{
-    const CONTROLLER_NAME = 'Admin\FirebaseController';
+    const CONTROLLER_NAME = '\App\Http\Controllers\Admin\FirebaseController';
     const PREFIX = 'firebase';
 
     const DASH_BOARD = 'dashboard';

@@ -2,7 +2,7 @@
 namespace App\Http\Controllers\Api;
 
 interface ManagerApiInterface{
-    const CONTROLLER_NAME = 'Api\ManagerApiController';
+    const CONTROLLER_NAME = '\App\Http\Controllers\Api\ManagerApiController';
 
     const HOME_INFO = 'homeInfo';
     const TAGS = 'tags';

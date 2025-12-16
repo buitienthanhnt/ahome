@@ -2,7 +2,7 @@
 namespace App\Http\Controllers\Frontend;
 
 interface PaperFrontControllerInterface{
-    const CONTROLLER_NAME = 'Frontend\PaperFrontController';
+    const CONTROLLER_NAME = '\App\Http\Controllers\Frontend\PaperFrontController';
     const PREFIX = 'paper';
 
     const FRONT_PAPER_ADD_LIKE = 'addPaperLike';

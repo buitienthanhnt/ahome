@@ -2,9 +2,11 @@
 
 namespace App\Helper;
 
-use Intervention\Image\Facades\Image;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\File;
+use Intervention\Image\ImageManager;
+use Intervention\Image\Drivers\Gd\Driver;
+
 /**
  * php artisan storage:link
  */
@@ -40,11 +42,13 @@ trait ImageUpload
                                 "file_path" => $upload_file,
                                 "file_url" => $file_path
                             ],
-                            $this->resize($resize_path, $upload_file));
+                            // $this->resize($resize_path, $upload_file)
+                            );
                     }
                     return $file_path;
                 }
             } catch (\Throwable $th) {
+                throw $th;
                 return false;
             }
         }
@@ -70,11 +74,12 @@ trait ImageUpload
         }
 
         $real_image_path = $this->public_storage_path($file_path);
-        $image = Image::make($real_image_path);
+
+        $image =ImageManager::imagick()->read($real_image_path);
         // $save_file_name = $this->public_storage_path($save_folder) . "/" . $file_name;
         $save_file_name = $save_folder . "/" . $file_name;  // /storage/images/resize/all/lFLIAAxDjwYg9157-FTgJTfGq-TTT-3852-1682000802-1682040277.jpg
 
-        $image->fit($width, $height)->save($save_file_name);  // lưu ý các folder phải tồn tại(nó không tạo folder tự động)
+        $image->resize($width, $height)->save($save_file_name);  // lưu ý các folder phải tồn tại(nó không tạo folder tự động)
         return [
                 "resize_name" => $file_name,
                 "resize_path" => $save_file_name,

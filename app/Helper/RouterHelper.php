@@ -10,6 +10,7 @@ class RouterHelper{
 
     function paperDetailUrl(Paper $paper): string
     {
+        return '';
         return route('front_paper_detail', ['paper_id' => $paper->id, 'alias' => $paper->{PaperInterface::ATTR_URL_ALIAS}]);
     }
 }

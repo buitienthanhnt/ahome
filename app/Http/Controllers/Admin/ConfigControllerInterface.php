@@ -2,7 +2,7 @@
 namespace App\Http\Controllers\Admin;
 
 interface ConfigControllerInterface{
-    const CONTROLLER_NAME = 'Admin\ConfigController';
+    const CONTROLLER_NAME = '\App\Http\Controllers\Admin\ConfigController';
     const PREFIX = 'config';
 
     const LIST_CONFIG = 'listConfig';

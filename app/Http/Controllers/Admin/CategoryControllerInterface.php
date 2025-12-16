@@ -2,7 +2,7 @@
 namespace App\Http\Controllers\Admin;
 
 interface CategoryControllerInterface{
-    const CONTROLLER_NAME = 'Admin\CategoryController';
+    const CONTROLLER_NAME = '\App\Http\Controllers\Admin\CategoryController';
     const PREFIX = 'category';
 
     const LISTCATEGORY = 'listCategory';

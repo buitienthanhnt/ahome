@@ -251,15 +251,15 @@ class PaperFirebaseApi extends BaseApi
 
     function removePaperInfo($idInFirebase): void
     {
-        try {
-            $observer = $this->fireStore->collection('detailInfo')->document($idInFirebase);
-            $observer->delete();
-            $this->logTha->logFirebase('info', 'removed paper info in firestore', [
-                'paper' => $idInFirebase,
-            ]);
-        } catch (\Throwable $th) {
-            $this->logTha->logFirebase('warning', 'can not remove paper info in firestore: ' . $th->getMessage(), ['line' => $th->getLine()]);
-        }
+        // try {
+        //     $observer = $this->fireStore->collection('detailInfo')->document($idInFirebase);
+        //     $observer->delete();
+        //     $this->logTha->logFirebase('info', 'removed paper info in firestore', [
+        //         'paper' => $idInFirebase,
+        //     ]);
+        // } catch (\Throwable $th) {
+        //     $this->logTha->logFirebase('warning', 'can not remove paper info in firestore: ' . $th->getMessage(), ['line' => $th->getLine()]);
+        // }
     }
 
     function removePaperWriter($paperData)
@@ -359,7 +359,7 @@ class PaperFirebaseApi extends BaseApi
              * dang bi loi nen dung qua realtime database.
              */
             if (false) {
-                $this->fireStore->collection('detailContent')->document($paperDetail['id'])->create($paperDetail);
+                // $this->fireStore->collection('detailContent')->document($paperDetail['id'])->create($paperDetail);
             }
             /**
              * upload to papers firebase realtimeDatabase
@@ -393,24 +393,24 @@ class PaperFirebaseApi extends BaseApi
      */
     function upPaperInfo(Paper $paper)
     {
-        try {
-            if (is_numeric($paper)) {
-                $paper = $this->getDetail($paper);
-            }
-            if (empty($paper)) {
-                return;
-            }
-            $observer = $this->fireStore->collection('detailInfo')->document($paper->id);
-            if (!$observer->snapshot()->data()) {
-                $observer->create($paper->paperInfo());
-            } else {
-                $observer->delete();
-                $observer->create($paper->paperInfo());
-            }
-            $this->logTha->logFirebase('info', "added for detail info: " . $paper->id . " to document paper info firebase", ['paper' => $paper->id]);
-        } catch (\Throwable $th) {
-            $this->logTha->logFirebase('warning', 'add paper info firebase error: ' . $th->getMessage(), ['line' => $th->getLine()]);
-        }
+        // try {
+        //     if (is_numeric($paper)) {
+        //         $paper = $this->getDetail($paper);
+        //     }
+        //     if (empty($paper)) {
+        //         return;
+        //     }
+        //     $observer = $this->fireStore->collection('detailInfo')->document($paper->id);
+        //     if (!$observer->snapshot()->data()) {
+        //         $observer->create($paper->paperInfo());
+        //     } else {
+        //         $observer->delete();
+        //         $observer->create($paper->paperInfo());
+        //     }
+        //     $this->logTha->logFirebase('info', "added for detail info: " . $paper->id . " to document paper info firebase", ['paper' => $paper->id]);
+        // } catch (\Throwable $th) {
+        //     $this->logTha->logFirebase('warning', 'add paper info firebase error: ' . $th->getMessage(), ['line' => $th->getLine()]);
+        // }
     }
 
     /**
@@ -450,7 +450,7 @@ class PaperFirebaseApi extends BaseApi
 
     function rmContentFireStore($paperId)
     {
-        $this->fireStore->collection('detailContent')->document($paperId)->delete();
+        // $this->fireStore->collection('detailContent')->document($paperId)->delete();
     }
 
     /**
@@ -695,7 +695,7 @@ class PaperFirebaseApi extends BaseApi
 //            dd($defaultDatabase);
 
 //            $document = $firestore->document('newpaper/detailcontent');
-            $data = $this->fireStore->documents(["abc/bbb"]);
+            // $data = $this->fireStore->documents(["abc/bbb"]);
 //            $value = $data->snapshot();
             dd($data);
         }catch (\Exception $exception){

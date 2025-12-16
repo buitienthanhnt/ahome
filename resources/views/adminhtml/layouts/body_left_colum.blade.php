@@ -1,1 +1,1 @@
-@render(App\ViewBlock\AdminLeftTab::class)
+@render(\App\ViewBlock\AdminLeftTab::class)

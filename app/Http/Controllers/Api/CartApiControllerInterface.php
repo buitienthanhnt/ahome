@@ -2,7 +2,7 @@
 namespace App\Http\Controllers\Api;
 
 interface CartApiControllerInterface{
-    const CONTROLLER_NAME = 'Api\CartApiController';
+    const CONTROLLER_NAME = '\App\Http\Controllers\Api\CartApiController';
 
     const ADD_TO_CART = 'addToCart';
     const GET_CART = 'getCart';

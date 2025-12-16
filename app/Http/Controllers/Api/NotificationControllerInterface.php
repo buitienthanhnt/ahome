@@ -2,7 +2,7 @@
 namespace App\Http\Controllers\Api;
 
 interface NotificationControllerInterface{
-    const CONTROLLER_NAME = 'api\NotificationController';
+    const CONTROLLER_NAME = '\App\Http\Controllers\Api\NotificationController';
     const PREFIX = 'notification';
     const REGISTER_FCM = 'registerFcm';
     const PUSH_NOTIFICATION = 'pushNotification';

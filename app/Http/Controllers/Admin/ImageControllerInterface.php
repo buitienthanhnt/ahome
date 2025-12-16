@@ -2,7 +2,7 @@
 namespace App\Http\Controllers\Admin;
 
 interface ImageControllerInterface{
-    const CONTROLLER_NAME = 'Admin\ImageController';
+    const CONTROLLER_NAME = '\App\Http\Controllers\Admin\ImageController';
     const PREFIX = 'file';
 
     const LIST_FILE = 'listFile';

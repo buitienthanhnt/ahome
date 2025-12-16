@@ -15,15 +15,15 @@ use App\Http\Controllers\Admin\WriterControllerInterface;
 
 Route::group(["prefix" => "adminhtml"], function () {
     $admin = AdminControllerInterface::ADMIN;
-    $admin_controller = AdminController::class;
+    $admin_controller = "\App\Http\Controllers\Admin\AdminController@";
 
-    Route::get("/", [AdminController::class, AdminControllerInterface::ADMIN_HOME])->name($admin)->middleware("adminLogin");
+    Route::get("/", "\App\Http\Controllers\Admin\AdminController@".AdminControllerInterface::ADMIN_HOME)->name($admin)->middleware("adminLogin");
 
-    Route::get("login", [$admin_controller, AdminControllerInterface::ADMIN_LOGIN])->name($admin . "_login");
+    Route::get("login", $admin_controller.AdminControllerInterface::ADMIN_LOGIN)->name($admin . "_login");
 
-    Route::post("loginpost", [$admin_controller, AdminControllerInterface::LOGIN_POST])->name($admin . "_login_post");
+    Route::post("loginpost", $admin_controller.AdminControllerInterface::LOGIN_POST)->name($admin . "_login_post");
 
-    Route::get('logout', [$admin_controller, AdminControllerInterface::LOGOUT])->name($admin . "_logout");
+    Route::get('logout', $admin_controller.AdminControllerInterface::LOGOUT)->name($admin . "_logout");
 
     $middlewareAdminPermission = ["adminLogin", "AdminPermission"];
 
@@ -162,7 +162,7 @@ Route::group(["prefix" => "adminhtml"], function () {
 
         Route::get('/', $firebaseController.FirebaseControllerInterface::DASH_BOARD)->name($admin . "_firebase_dashboard");
 
-        Route::get('remoteConfig', $firebaseController.'remoteConfig');
+        // Route::get('remoteConfig', $firebaseController.'remoteConfig');
 
         Route::get('upload-writer', $firebaseController.FirebaseControllerInterface::FIREBASE_UPLOAD_WRITER)->name($admin . "_firebase_upload_writer");
 

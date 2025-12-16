@@ -2,7 +2,7 @@
 namespace App\Http\Controllers\Admin;
 
 interface PaperControllerInterface{
-    const CONTROLLER_NAME = 'Admin\PaperController';
+    const CONTROLLER_NAME = '\App\Http\Controllers\Admin\PaperController';
     const PREFIX = 'paper';
 
     const LIST_PAPER = 'listPaper';

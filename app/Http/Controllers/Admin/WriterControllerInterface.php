@@ -2,7 +2,7 @@
 namespace App\Http\Controllers\Admin;
 
 interface WriterControllerInterface{
-    const CONTROLLER_NAME = 'Admin\WriterController';
+    const CONTROLLER_NAME = '\App\Http\Controllers\Admin\WriterController';
     const PREFIX = 'writer';
 
     const LIST_WRITER = 'listWriter';

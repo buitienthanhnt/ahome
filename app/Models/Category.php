@@ -209,6 +209,7 @@ class Category extends Model implements CategoryInterface
      */
     function getUrl(): string
     {
+        return '';
         return route('front_category', ['category' => $this->{CategoryInterface::ATTR_URL_ALIAS}]);
     }
 

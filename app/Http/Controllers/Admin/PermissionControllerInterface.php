@@ -2,7 +2,7 @@
 namespace App\Http\Controllers\Admin;
 
 interface PermissionControllerInterface{
-    const CONTROLLER_NAME = 'Admin\PermissionController';
+    const CONTROLLER_NAME = '\App\Http\Controllers\Admin\PermissionController';
     const PREFIX = 'permission';
 
     const LIST_PERMISSION = 'listPermission';
