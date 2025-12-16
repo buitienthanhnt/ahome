@@ -1,0 +1,65 @@
+home:{
+
+} 
+
+room:{
+
+}
+
+order:{
+
+}
+
+		
+home->room
+|
+attribute
+
+
+order time
+
+	date: 2025-12-09
+	list_room: [1,2,3,4,5,]
+	home_id: number,
+
+
+	1 nam =>356
+	10 nam => 3650
+	100 => 36500
+
+
+order time:
+[date_from ---- date_to]								 [date_from ---- date_to]
+
+						   request_from ----- request_to
+
+				[request_from ----[date_from ---- date_to]---- request_to]
+[date_from ---------------------------------- date_to]	
+
+Tìm kiếm các order xung đột:
+								[date_from -------------- date_to]  [date_from -------------- date_to]
+	       						[active]    [request_from(26)-----------------------request_to(31)]   [active]
+								[date_from(24)-------------------------------------------------(31)---date_to]
+
+current has: request_from & request_to
+search: 	
+	các order không xung đột(bỏ qua việc xét):	where date_to < request _from or where date_from > request_to 
+	các order xung đột: where 
+						date_from >= request_from & date_from <= request_to 
+						|| 
+						date_to >= request_from && date_to <= request_to
+						||
+						date_from <= request_from & date_to >= request_to
+
+attribute
+id | type | source_id | key |  value
+
+1    home    1       location   hanoi 
+2    room    1       price      100 
+
+select * from attr where type= home and key=location  and source_id=1 and value
+
+
+ahome_attr_label
+type    |   key    | value |   label 
+room       price       1       100$

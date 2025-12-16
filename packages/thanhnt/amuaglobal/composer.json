@@ -1,0 +1,20 @@
+{
+    "name": "thanhnt/amuaglobal",
+    "autoload": {
+        "psr-4": {
+            "Thanhnt\\Amuaglobal\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "thanhnt",
+            "email": "buitienthanhnt@gmail.com"
+        }
+    ],
+    "type": "laravel-package",
+    "license": "MIT",
+    "description": "A brief description of your package.",
+    "require": {},
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

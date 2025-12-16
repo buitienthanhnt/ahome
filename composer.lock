@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2f8fad98d414b6e76b3cad63a981e25e",
+    "content-hash": "f1ec97fd43f3c812362aa8721153ca1b",
     "packages": [
         {
             "name": "brick/math",
@@ -5838,6 +5838,83 @@
             "time": "2025-10-27T20:36:44+00:00"
         },
         {
+            "name": "thanhnt/acarglobal",
+            "version": "dev-dev-brezze",
+            "dist": {
+                "type": "path",
+                "url": "packages/thanhnt/acarglobal",
+                "reference": "78303a8f6f5aa73e8ad9a618759dac7dd2c44207"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Thanhnt\\Acarglobal\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "thanhnt",
+                    "email": "buitienthanhnt@gmail.com"
+                }
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "thanhnt/ahomeglobal",
+            "version": "dev-dev-brezze",
+            "dist": {
+                "type": "path",
+                "url": "packages/thanhnt/ahomeglobal",
+                "reference": "70f86a0f963557b993d4e881473dfc984229887d"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Thanhnt\\Ahomeglobal\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "thanhnt",
+                    "email": "buitienthanhnt@gmail.com"
+                }
+            ],
+            "description": "create new package for book hotel",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "thanhnt/amuaglobal",
+            "version": "dev-dev-brezze",
+            "dist": {
+                "type": "path",
+                "url": "packages/thanhnt/amuaglobal",
+                "reference": "2eb1d80644dc48e692e809447d4c833dc571d98e"
+            },
+            "type": "laravel-package",
+            "autoload": {
+                "psr-4": {
+                    "Thanhnt\\Amuaglobal\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "thanhnt",
+                    "email": "buitienthanhnt@gmail.com"
+                }
+            ],
+            "description": "A brief description of your package.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "tightenco/ziggy",
             "version": "v2.6.0",
             "source": {
@@ -8548,7 +8625,11 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "thanhnt/acarglobal": 20,
+        "thanhnt/ahomeglobal": 20,
+        "thanhnt/amuaglobal": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

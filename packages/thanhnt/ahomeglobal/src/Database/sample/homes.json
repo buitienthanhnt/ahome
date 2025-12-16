@@ -1,0 +1,63 @@
+[
+	{
+		"id": 1,
+		"name": "Felton Bergstrom",
+		"description": "Excepturi eum et porro quisquam.",
+		"district": "Corrupti nemo beatae sed quam. Est aliquid unde qui eos dicta. Unde ipsam possimus inventore suscipit corrupti. Alias perspiciatis molestiae dolorem esse enim doloremque vel.",
+		"deleted_at": null,
+		"rooms": [
+			{
+				"id": 1,
+				"title": "Dr. Stevie Waters",
+				"description": "Sit ratione et sed possimus et mollitia eos dolor. In qui quos nulla quae voluptas sapiente reiciendis. Aut id amet molestias ut ut numquam quia.",
+				"type": "one",
+				"deleted_at": null
+			},
+			{
+				"id": 2,
+				"title": "Simone Jast",
+				"description": "Sunt earum magnam occaecati rerum ipsam est. In vitae voluptatibus impedit.",
+				"type": "one",
+				"deleted_at": null
+			},
+			{
+				"id": 3,
+				"title": "Derrick Welch",
+				"description": "Sint aliquam cupiditate et aspernatur. Nesciunt ex ullam aliquam rem exercitationem voluptatibus corrupti cum.",
+				"type": "one",
+				"deleted_at": null
+			}
+		]
+	},
+	{
+		"id": 2,
+		"name": "Dr. Reyna Larkin DVM",
+		"description": "Sunt et doloribus dolorem doloribus voluptates quis.",
+		"district": "Nulla eligendi tempore asperiores. Provident quo ipsa ut dolorem. Cumque eum esse provident repellendus architecto.",
+		"deleted_at": null,
+		"rooms": [
+			{
+				"id": 4,
+				"title": "Gonzalo Smitham PhD",
+				"description": "Architecto distinctio dolore et et earum aliquam eligendi. Cum et iste dolorem magni natus ad est.",
+				"type": "one",
+				"deleted_at": null
+			},
+			{
+				"id": 5,
+				"title": "Prof. Bobby Barton IV",
+				"description": "Eum neque voluptatem molestiae ut qui repellat sit. Laboriosam qui molestiae tempora eaque quo.",
+				"type": "one",
+				"deleted_at": null
+			}
+		]
+	},
+	{
+		"id": 3,
+		"name": "Hilda Lindgren",
+		"description": "Aliquam sed aut atque est fugiat est.",
+		"district": "Illo necessitatibus odit aut fuga provident. Qui sit quaerat eos sapiente. Voluptas sed illum et animi.",
+		"deleted_at": null,
+		"rooms": []
+	}
+]

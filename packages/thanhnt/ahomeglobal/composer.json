@@ -1,0 +1,16 @@
+{
+    "name": "thanhnt/ahomeglobal",
+    "description": "create new package for book hotel",
+    "autoload": {
+        "psr-4": {
+            "Thanhnt\\Ahomeglobal\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "thanhnt",
+            "email": "buitienthanhnt@gmail.com"
+        }
+    ],
+    "require": {}
+}

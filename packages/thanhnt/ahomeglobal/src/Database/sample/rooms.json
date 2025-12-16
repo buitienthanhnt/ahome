@@ -1,0 +1,82 @@
+[
+	{
+		"id": 1,
+		"title": "Dr. Stevie Waters",
+		"description": "Sit ratione et sed possimus et mollitia eos dolor. In qui quos nulla quae voluptas sapiente reiciendis. Aut id amet molestias ut ut numquam quia.",
+		"type": "one",
+		"home_id": 1,
+		"created_at": "2025-12-05T10:47:31.000000Z",
+		"deleted_at": null,
+		"home": {
+			"id": 1,
+			"name": "Felton Bergstrom",
+			"description": "Excepturi eum et porro quisquam.",
+			"district": "Corrupti nemo beatae sed quam. Est aliquid unde qui eos dicta. Unde ipsam possimus inventore suscipit corrupti. Alias perspiciatis molestiae dolorem esse enim doloremque vel.",
+			"deleted_at": null
+		}
+	},
+	{
+		"id": 2,
+		"title": "Simone Jast",
+		"description": "Sunt earum magnam occaecati rerum ipsam est. In vitae voluptatibus impedit.",
+		"type": "one",
+		"home_id": 1,
+		"created_at": "2025-12-05T10:47:33.000000Z",
+		"deleted_at": null,
+		"home": {
+			"id": 1,
+			"name": "Felton Bergstrom",
+			"description": "Excepturi eum et porro quisquam.",
+			"district": "Corrupti nemo beatae sed quam. Est aliquid unde qui eos dicta. Unde ipsam possimus inventore suscipit corrupti. Alias perspiciatis molestiae dolorem esse enim doloremque vel.",
+			"deleted_at": null
+		}
+	},
+	{
+		"id": 3,
+		"title": "Derrick Welch",
+		"description": "Sint aliquam cupiditate et aspernatur. Nesciunt ex ullam aliquam rem exercitationem voluptatibus corrupti cum.",
+		"type": "one",
+		"home_id": 1,
+		"created_at": "2025-12-05T10:47:34.000000Z",
+		"deleted_at": null,
+		"home": {
+			"id": 1,
+			"name": "Felton Bergstrom",
+			"description": "Excepturi eum et porro quisquam.",
+			"district": "Corrupti nemo beatae sed quam. Est aliquid unde qui eos dicta. Unde ipsam possimus inventore suscipit corrupti. Alias perspiciatis molestiae dolorem esse enim doloremque vel.",
+			"deleted_at": null
+		}
+	},
+	{
+		"id": 4,
+		"title": "Gonzalo Smitham PhD",
+		"description": "Architecto distinctio dolore et et earum aliquam eligendi. Cum et iste dolorem magni natus ad est.",
+		"type": "one",
+		"home_id": 2,
+		"created_at": "2025-12-05T10:48:04.000000Z",
+		"deleted_at": null,
+		"home": {
+			"id": 2,
+			"name": "Dr. Reyna Larkin DVM",
+			"description": "Sunt et doloribus dolorem doloribus voluptates quis.",
+			"district": "Nulla eligendi tempore asperiores. Provident quo ipsa ut dolorem. Cumque eum esse provident repellendus architecto.",
+			"deleted_at": null
+		}
+	},
+	{
+		"id": 5,
+		"title": "Prof. Bobby Barton IV",
+		"description": "Eum neque voluptatem molestiae ut qui repellat sit. Laboriosam qui molestiae tempora eaque quo.",
+		"type": "one",
+		"home_id": 2,
+		"created_at": "2025-12-05T10:48:06.000000Z",
+		"deleted_at": null,
+		"home": {
+			"id": 2,
+			"name": "Dr. Reyna Larkin DVM",
+			"description": "Sunt et doloribus dolorem doloribus voluptates quis.",
+			"district": "Nulla eligendi tempore asperiores. Provident quo ipsa ut dolorem. Cumque eum esse provident repellendus architecto.",
+			"deleted_at": null
+		}
+	}
+]

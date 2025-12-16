@@ -1,0 +1,142 @@
+{
+	"component": "Ahomeglobal\/Screens\/HomeDetail",
+	"props": {
+		"homeDetail": {
+			"id": 1,
+			"name": "Felton Bergstrom",
+			"description": "Excepturi eum et porro quisquam.",
+			"district": "Corrupti nemo beatae sed quam. Est aliquid unde qui eos dicta. Unde ipsam possimus inventore suscipit corrupti. Alias perspiciatis molestiae dolorem esse enim doloremque vel.",
+			"rooms": [
+				{
+					"id": 1,
+					"title": "Dr. Stevie Waters",
+					"description": "Sit ratione et sed possimus et mollitia eos dolor. In qui quos nulla quae voluptas sapiente reiciendis. Aut id amet molestias ut ut numquam quia.",
+					"type": "one",
+					"booked_dates": [
+						"2025-12-12"
+					]
+				},
+				{
+					"id": 2,
+					"title": "Simone Jast",
+					"description": "Sunt earum magnam occaecati rerum ipsam est. In vitae voluptatibus impedit.",
+					"type": "one",
+					"booked_dates": [
+						"2025-12-11",
+						"2025-12-12",
+						"2025-12-09"
+					]
+				},
+				{
+					"id": 3,
+					"title": "Derrick Welch",
+					"description": "Sint aliquam cupiditate et aspernatur. Nesciunt ex ullam aliquam rem exercitationem voluptatibus corrupti cum.",
+					"type": "one",
+					"booked_dates": [
+						"2025-12-11",
+						"2025-12-12",
+						"2025-12-09",
+						"2026-01-15",
+						"2026-01-08"
+					]
+				}
+			],
+			"order_times": [
+				{
+					"id": 1,
+					"date": "2025-11-16",
+					"home_id": 1,
+					"room_ids": [
+						3,
+						2
+					],
+					"order_ids": [
+						18,
+						19
+					],
+					"deleted_at": null
+				},
+				{
+					"id": 2,
+					"date": "2025-12-11",
+					"home_id": 1,
+					"room_ids": [
+						2,
+						3
+					],
+					"order_ids": [
+						20,
+						21
+					],
+					"deleted_at": null
+				},
+				{
+					"id": 3,
+					"date": "2025-12-12",
+					"home_id": 1,
+					"room_ids": [
+						3,
+						2,
+						1
+					],
+					"order_ids": [
+						22,
+						23,
+						24
+					],
+					"deleted_at": null
+				},
+				{
+					"id": 4,
+					"date": "2025-12-09",
+					"home_id": 1,
+					"room_ids": [
+						3,
+						2
+					],
+					"order_ids": [
+						22,
+						23
+					],
+					"deleted_at": null
+				},
+				{
+					"id": 5,
+					"date": "2025-12-08",
+					"home_id": 1,
+					"room_ids": [
+						1
+					],
+					"order_ids": [
+						25
+					],
+					"deleted_at": null
+				},
+				{
+					"id": 11,
+					"date": "2026-01-15",
+					"home_id": 1,
+					"room_ids": [
+						3
+					],
+					"order_ids": [
+						30
+					],
+					"deleted_at": null
+				},
+				{
+					"id": 12,
+					"date": "2026-01-08",
+					"home_id": 1,
+					"room_ids": [
+						3
+					],
+					"order_ids": [
+						30
+					],
+					"deleted_at": null
+				}
+			]
+		}
+	}
+}

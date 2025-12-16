@@ -1,0 +1,17 @@
+{
+    "name": "thanhnt/acarglobal",
+    "autoload": {
+        "psr-4": {
+            "Thanhnt\\Acarglobal\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "thanhnt",
+            "email": "buitienthanhnt@gmail.com"
+        }
+    ],
+    "require": {},
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
