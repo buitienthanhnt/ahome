@@ -1,0 +1,15 @@
+{
+    "name": "thanhnt/nan",
+    "autoload": {
+        "psr-4": {
+            "Thanhnt\\Nan\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "thanhnt",
+            "email": "buitienthanhnt@gmail.com"
+        }
+    ],
+    "require": {}
+}
